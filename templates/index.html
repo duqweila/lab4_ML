@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Offline Translation APP</title>
+  </head>
+  <body>
+    <form action="/translate" method="post">
+      <textarea name="text"></textarea>
+      <button type="submit">Translate</button>
+    </form>
+    {% if translated_text %}
+    <p>Translation: {{ translated_text }}</p>
+    {% endif %}
+  </body>
+</html>
